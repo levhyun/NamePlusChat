@@ -43,7 +43,12 @@ io.on('connection', socket => {
 
 const PORT = 3000 || process.env.PORT;
 
-server.listen(PORT, () => console.log(`Server has been running..!\n[Server address]\n- http://${getIp()}:${PORT}\n- http://127.0.0.1:${PORT}\n- http://localhost:${PORT}`));
+server.listen(PORT, () => {
+    console.log(`Server has been running..!\n`);
+    console.log(`[Server address]\n- http://${getIp()}:${PORT}\n`);
+    console.log(`- http://127.0.0.1:${PORT}\n`);
+    console.log(`- http://localhost:${PORT}`);
+});
 
 function getIp() {
     var ifaces = os.networkInterfaces();
