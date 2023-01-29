@@ -44,9 +44,9 @@ io.on('connection', socket => {
 const PORT = 3000 || process.env.PORT;
 
 server.listen(PORT, () => {
-    console.log(`Server has been running..!\n`);
-    console.log(`[Server address]\n- http://${getIp()}:${PORT}\n`);
-    console.log(`- http://127.0.0.1:${PORT}\n`);
+    console.log(`Server has been running..!`);
+    console.log(`[Server address]\n- http://${getIp()}:${PORT}`);
+    console.log(`- http://127.0.0.1:${PORT}`);
     console.log(`- http://localhost:${PORT}`);
 });
 
